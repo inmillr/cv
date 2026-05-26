@@ -1,0 +1,31 @@
+{
+  "personal": {
+    "name": "Jane Doe",
+    "label": "Frontend Engineer",
+    "email": "jane@example.com",
+    "location": "London, UK"
+  },
+  "summary": "Frontend engineer with 5+ years building accessible, responsive interfaces.",
+  "experience": [
+    {
+      "company": "Acme Co",
+      "title": "Senior Frontend Engineer",
+      "period": "2022 - Present",
+      "description": "Led UI rebuild using React and TypeScript."
+    },
+    {
+      "company": "Beta Inc",
+      "title": "Frontend Engineer",
+      "period": "2019 - 2022",
+      "description": "Built component libraries and design-system primitives."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Somewhere",
+      "degree": "BSc Computer Science",
+      "period": "2015 - 2018"
+    }
+  ],
+  "skills": ["React", "TypeScript", "TailwindCSS", "Accessibility", "Testing"]
+}
