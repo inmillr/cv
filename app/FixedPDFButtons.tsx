@@ -2,7 +2,7 @@
 
 export default function FixedPDFButtons() {
   return (
-    <div className="fixed top-4 right-4 sm:flex z-50 flex-col items-center gap-3">
+    <div className="fixed top-4 right-4 sm:flex z-50 flex-col items-center">
       <a
         href="/Ian_Miller_Resume.pdf"
         target="_blank"
