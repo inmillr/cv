@@ -1,0 +1,44 @@
+{
+  "personal": {
+    "name": "Ian Miller",
+    "title": "Software Engineer",
+    "location": "Springfield, MO",
+    "email": "indmillr@gmail.com",
+    "linkedin": "linkedin.com/in/indmillr",
+    "website": "solvrdev.com"
+  },
+  "summary": "I am a software engineer and UI-focused developerwith a passion for slick UI and a knack for design. I have a blend of technical expertise and strong communication/leadership skills. I enjoy building things that solve interesting problems.",
+  "experience": [
+    {
+      "company": "Bright Labs",
+      "role": "Lead Frontend Engineer",
+      "period": "2023 – Present",
+      "description": "Driving UI architecture and mentoring a cross-functional team to deliver scalable React applications."
+    },
+    {
+      "company": "Nimbus Studio",
+      "role": "Frontend Engineer",
+      "period": "2020 – 2023",
+      "description": "Built component systems and polished UX for B2B dashboards and marketing sites."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technical University of Berlin",
+      "degree": "B.Sc. in Computer Science",
+      "period": "2016 – 2019"
+    }
+  ],
+  "skills": ["React", "TypeScript", "TailwindCSS", "Next.js", "Responsive Design", "JavaScript", "PHP", "SQL", "UI/UX Design", "Agile"],
+  "projects": [
+    {
+      "name": "Design System Library",
+      "description": "Built a reusable component library for internal products with dark/light themes and accessibility-first patterns."
+    },
+    {
+      "name": "Career Portal",
+      "description": "Delivered a responsive job application portal with optimized mobile workflows and performance improvements."
+    }
+  ],
+  "certifications": ["Certified Accessibility Specialist", "Advanced TypeScript Professional"]
+}
