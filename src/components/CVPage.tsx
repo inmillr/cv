@@ -14,14 +14,58 @@ export default function CVPage() {
               <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">{cv.personal.name}</h1>
               <p className="mt-2 text-lg text-slate-600 dark:text-slate-300">{cv.personal.title}</p>
             </div>
-            <ThemeToggle />
+            <div className="flex flex-col items-center gap-3">
+              <a
+                href="/Ian_Miller_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-slate-300/60 bg-transparent px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50 dark:text-slate-100 dark:hover:bg-slate-900"
+              >
+                View PDF
+              </a>
+              <a
+                href="/Ian_Miller_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Ian_Miller_Resume.pdf"
+                className="rounded-full border border-slate-300/70 bg-white/90 px-4 py-2 text-sm font-medium text-slate-900 shadow-sm hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-950/80 dark:text-slate-100 dark:hover:bg-slate-900"
+              >
+                Download PDF
+              </a>
+              {/* <ThemeToggle /> */}
+            </div>
           </div>
 
           <div className="grid gap-4 border-t border-slate-200/80 pt-6 text-sm text-slate-600 dark:border-slate-800/80 dark:text-slate-300 sm:grid-cols-2">
             <div>{cv.personal.location}</div>
-            <div>{cv.personal.email}</div>
-            <div>{cv.personal.linkedin}</div>
-            <div>{cv.personal.website}</div>
+            <div>
+              <a
+                href={`mailto:${cv.personal.email}`}
+                className="hover:cursor-pointer text-slate-700 dark:text-slate-300 hover:underline"
+              >
+                {cv.personal.email}
+              </a>
+            </div>
+            <div>
+              <a
+                href={cv.personal.linkedin?.startsWith('http') ? cv.personal.linkedin : `https://${cv.personal.linkedin}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:cursor-pointer text-slate-700 dark:text-slate-300 hover:underline"
+              >
+                {cv.personal.linkedin}
+              </a>
+            </div>
+            <div>
+              <a
+                href={cv.personal.website?.startsWith('http') ? cv.personal.website : `https://${cv.personal.website}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:cursor-pointer text-slate-700 dark:text-slate-300 hover:underline"
+              >
+                {cv.personal.website}
+              </a>
+            </div>
           </div>
         </div>
 
