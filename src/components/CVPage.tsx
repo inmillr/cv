@@ -1,6 +1,5 @@
 'use client'
 
-import ThemeToggle from './ThemeToggle'
 import Section from './Section'
 import cv from '../data/cv.json'
 
@@ -13,26 +12,6 @@ export default function CVPage() {
             <div>
               <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">{cv.personal.name}</h1>
               <p className="mt-2 text-lg text-slate-600 dark:text-slate-300">{cv.personal.title}</p>
-            </div>
-            <div className="flex flex-col items-center gap-3">
-              <a
-                href="/Ian_Miller_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full border border-slate-300/60 bg-transparent px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50 dark:text-slate-100 dark:hover:bg-slate-900"
-              >
-                View PDF
-              </a>
-              <a
-                href="/Ian_Miller_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                download="Ian_Miller_Resume.pdf"
-                className="rounded-full border border-slate-300/70 bg-white/90 px-4 py-2 text-sm font-medium text-slate-900 shadow-sm hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-950/80 dark:text-slate-100 dark:hover:bg-slate-900"
-              >
-                Download PDF
-              </a>
-              {/* <ThemeToggle /> */}
             </div>
           </div>
 

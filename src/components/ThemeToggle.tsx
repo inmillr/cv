@@ -1,27 +1,9 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-
-const themes = ['light', 'dark'] as const
-
-type Theme = (typeof themes)[number]
+import { useTheme } from '@/src/context/ThemeContext'
 
 export default function ThemeToggle() {
-    const [theme, setTheme] = useState<Theme>('light')
-
-    useEffect(() => {
-        const storedTheme = window.localStorage.getItem('theme') as Theme | null
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-        const initialTheme = storedTheme ?? (systemPrefersDark ? 'dark' : 'light')
-        setTheme(initialTheme)
-    }, [])
-
-    useEffect(() => {
-        const root = document.documentElement
-        root.dataset.theme = theme
-        root.classList.toggle('dark', theme === 'dark')
-        window.localStorage.setItem('theme', theme)
-    }, [theme])
+    const { theme, setTheme } = useTheme()
 
     return (
         <button
