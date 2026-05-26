@@ -1,44 +1,69 @@
 {
-  "personal": {
-    "name": "Ian Miller",
-    "title": "Software Engineer",
-    "location": "Springfield, MO",
-    "email": "indmillr@gmail.com",
-    "linkedin": "linkedin.com/in/indmillr",
-    "website": "solvrdev.com"
-  },
-  "summary": "I am a software engineer and UI-focused developerwith a passion for slick UI and a knack for design. I have a blend of technical expertise and strong communication/leadership skills. I enjoy building things that solve interesting problems.",
-  "experience": [
-    {
-      "company": "Bright Labs",
-      "role": "Lead Frontend Engineer",
-      "period": "2023 – Present",
-      "description": "Driving UI architecture and mentoring a cross-functional team to deliver scalable React applications."
+    "personal": {
+        "name": "Ian Miller",
+        "title": "Software Developer",
+        "location": "Springfield, MO",
+        "email": "indmillr@gmail.com",
+        "linkedin": "linkedin.com/in/indmillr",
+        "website": ""
     },
-    {
-      "company": "Nimbus Studio",
-      "role": "Frontend Engineer",
-      "period": "2020 – 2023",
-      "description": "Built component systems and polished UX for B2B dashboards and marketing sites."
-    }
-  ],
-  "education": [
-    {
-      "institution": "Technical University of Berlin",
-      "degree": "B.Sc. in Computer Science",
-      "period": "2016 – 2019"
-    }
-  ],
-  "skills": ["React", "TypeScript", "TailwindCSS", "Next.js", "Responsive Design", "JavaScript", "PHP", "SQL", "UI/UX Design", "Agile"],
-  "projects": [
-    {
-      "name": "Design System Library",
-      "description": "Built a reusable component library for internal products with dark/light themes and accessibility-first patterns."
-    },
-    {
-      "name": "Career Portal",
-      "description": "Delivered a responsive job application portal with optimized mobile workflows and performance improvements."
-    }
-  ],
-  "certifications": ["Certified Accessibility Specialist", "Advanced TypeScript Professional"]
+    "summary": "I am a software engineer and UI-focused developer with a passion for slick UI and a knack for design. I have a blend of technical expertise and strong communication and leadership skills. I enjoy building things that solve interesting problems.",
+    "experience": [
+        {
+            "company": "Health Solutions (Pueblo, CO - remote)",
+            "role": "Lead Developer",
+            "period": "12/25 – Present",
+            "description": "• Function as a leader by example in continual pursuit of iterative CI/CD development approach•Facilitate growth from a position of leadership of a team of 4 junior developers.• Enhance custom EHR system through frequent 1:1 interaction with internal leadership and stakeholders."
+        },
+        {
+            "company": "Health Solutions (Pueblo, CO - remote)",
+            "role": "Developer",
+            "period": "04/25 – 12/25",
+            "description": "• Maintain, support, and enhance custom EHR system according to user requirements (PHP, JS)• Provide data reports and visualizations to stakeholders and leadership (SQL, SSRS, PBI).• Consistently meet deadlines according to state regulations and product owner expectations.• Adhere to Agile methodologies and spearhead the momentum of development velocity within a highly iterative CI/CD pipeline."
+        },
+        {
+            "company": "SOLVR (Nixa, MO)",
+            "role": "Senior Full-Stack Developer, Owner",
+            "period": "03/25 – Present",
+            "description": "• Comprehensive, full-service software solutions.• Offering services and consultation in areas of custom websites, web applications, and general responsive UI design."
+        },
+        {
+            "company": "Next Level Solutions (Springfield, MO)",
+            "role": "Technical Trainer",
+            "period": "04/23 – 04/25",
+            "description": "• Design, develop, and maintain internal tools and custom applications using Next.js and TypeScript, including detailed documentation and LMS content.• Engineer web solutions to improve cross-departmental workflows, leveraging custom APIs, React components, and UI libraries for enhanced efficiency.• Automate code translation and data processes, developing secure Next.js endpoints to integrate browser UI with custom scripts.• Deliver specialized training on the Duck Creek platform, focusing on C#, OOP, XML, API consumption, and SQL to equip developers with essential skills."
+        }
+    ],
+    "skills": [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Next.js",
+        "Responsive Design",
+        "JavaScript",
+        "PHP",
+        "SQL",
+        "UI/UX Design",
+        "Agile Methodologies",
+        "Functional Programming",
+        "Leadership"
+    ],
+    "projects": [
+        {
+            "name": "Innovate Portal",
+            "description": "Participated in building an internal tools portal, integrating AI elements throughout. This included a custom AI chatbot for user support, general staff use, and as a liaison to acclimate new developers into the codebase and development environment to increase efficiency. This was built using Next.js, TypeScript, and TailwindCSS and leveraged the MS Teams tenant for including the custom AI component."
+        },
+        {
+            "name": "DocuVendor",
+            "description": "Designed and Developed a custom internal training tool that functioned as a static documentation hub for use by the training department to create and maintain training collateral of various media types. This was built with Next.js, TypeScript, and TailwindCSS and included custom APIs that allowed integration into the internal AI chatbot to allow users to query the documentation through the chatbot interface and receive relevant documentation in response."
+        }
+    ],
+    "certifications": [
+        "VR/AR Development (C#) - Unity",
+        "Junior Programmer (C#) - Unity",
+        "Relational Database",
+        "JavaScript Algorithms and Data Structures",
+        "Front End Development Libraries",
+        "Responsive Web Design"
+    ]
 }

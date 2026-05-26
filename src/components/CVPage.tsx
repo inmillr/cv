@@ -11,7 +11,6 @@ export default function CVPage() {
         <div className="mb-8 flex flex-col gap-4 rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-xl shadow-slate-200/50 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-900/90 dark:shadow-none">
           <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Curriculum Vitae</p>
               <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">{cv.personal.name}</h1>
               <p className="mt-2 text-lg text-slate-600 dark:text-slate-300">{cv.personal.title}</p>
             </div>
@@ -42,12 +41,14 @@ export default function CVPage() {
                     </div>
                     <span className="rounded-full bg-slate-200/70 px-3 py-1 text-xs font-medium uppercase tracking-[0.24em] text-slate-600 dark:bg-slate-700/80 dark:text-slate-200">{item.period}</span>
                   </div>
-                  <p className="text-slate-700 dark:text-slate-300">{item.description}</p>
+                  {item.description.split('•').filter(Boolean).map((line, index) => (
+    <p key={index}>• {line.trim()}</p>
+  ))}
                 </div>
               ))}
             </Section>
 
-            <Section title="Education">
+            {/* <Section title="Education">
               {cv.education.map((item) => (
                 <div key={`${item.institution}-${item.degree}`}>
                   <p className="text-base font-medium text-slate-900 dark:text-slate-100">{item.degree}</p>
@@ -55,7 +56,7 @@ export default function CVPage() {
                   <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{item.period}</p>
                 </div>
               ))}
-            </Section>
+            </Section> */}
 
             <Section title="Projects">
               <div className="space-y-4">
