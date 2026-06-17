@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ian Miller CV",
+  title: "CV | Ian Miller",
   description: "My personal curriculum vitae",
 };
 
